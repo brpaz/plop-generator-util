@@ -1,0 +1,42 @@
+{
+  "name": "@brpaz/plop-generator-util",
+  "version": "1.0.0",
+  "description": "A utility library containing utility functions for plop generators.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brpaz/plop-generator-util.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "publish": "npm publish --access public"
+  },
+  "keywords": [
+    "plop",
+    "git",
+    "utils"
+  ],
+  "author": "Bruno Paz",
+  "license": "MIT",
+  "dependencies": {
+    "plop": "^4.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3"
+  }
+}
