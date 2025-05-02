@@ -19,8 +19,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "publish": "npm publish --access public --no-git-checks"
+    "format:check": "prettier --check ."
   },
   "publishConfig": {
     "access": "public"
