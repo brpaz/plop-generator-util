@@ -68,11 +68,10 @@ jobs:
       - name: Bump version
         run: pnpm version --no-git-tag-version --no-commit-hooks --allow-same-version ${{ github.event.release.tag_name }}
 
-      - name: Authenticate to npm
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
       - name: Publish to npm
-        run: pnpm publish --no-git-checks
+        run: pnpm publish --no-git-checks --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@v1

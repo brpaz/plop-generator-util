@@ -5,7 +5,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brpaz/plop-generator-util.git"
+    "url": "git+https://github.com/brpaz/plop-generator-util.git"
   },
   "files": [
     "lib"
@@ -41,5 +41,12 @@
     "globals": "^16.0.0",
     "prettier": "3.5.3",
     "vitest": "^3.1.2"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "bugs": {
+    "url": "https://github.com/brpaz/plop-generator-util/issues"
+  },
+  "homepage": "https://github.com/brpaz/plop-generator-util#readme"
 }
